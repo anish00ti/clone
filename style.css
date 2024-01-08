@@ -1,0 +1,62 @@
+.socialicons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+
+.socialicons a i {
+    font-size: 2em;
+    color: #333;
+    opacity: 0.9;
+}
+
+.socialicons a:hover {
+    background-color: #000;
+}
+
+.socialicons a:hover i {
+    color: #fff;
+}
+
+.card img.img-thumbnail {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Add a class for mouse hover effect */
+.card:hover {
+    transform: scale(1.05);
+    /* Increase size on hover */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+@media screen and (max-width: 1300px) {
+
+    .socialicons {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 800px) {
+        .img-thumbnail {
+            height: fit-content;
+
+        }
+
+    }
+
+    .socialicons a {
+        margin: 1px;
+    }
+}
