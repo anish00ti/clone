@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="path/to/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>stellar</title>
@@ -21,9 +21,6 @@
 
 
     <style>
-        
-
-
         .socialicons {
             display: flex;
             justify-content: center;
@@ -67,41 +64,44 @@
             transition: transform 0.3s ease;
             /* Add a smooth transition effect */
         }
+
         @media screen and (max-width: 1300px) {
-         
-         .socialicons {
-             flex-wrap: wrap;
-         }
 
-         @media screen and (max-width: 800px) {
-             .img-thumbnail {
-                 height: fit-content;
+            .socialicons {
+                flex-wrap: wrap;
+            }
 
-             }
+            @media screen and (max-width: 800px) {
+                .img-thumbnail {
+                    height: fit-content;
 
-         }
+                }
 
-         .socialicons a {
-             margin: 1px;
-         }
-     }
+            }
+
+            .socialicons a {
+                margin: 1px;
+            }
+        }
     </style>
 
 </head>
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
-    <!-- Example Code -->
 
+    <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand px-lg-5" href="#">Stellar tech</a>
-    
-            <!-- Hamburger Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -126,12 +126,14 @@
                         <a class="nav-link px-lg-4" href="#contact"><strong>Contact Us</strong></a>
                     </li>
                 </ul>
-    
+
                 <!-- Login and Sign Up Buttons -->
-                <button type="button" class="btn btn-primary btn-sm mx-lg-3" data-bs-toggle="modal" data-bs-target="#login-form">
+                <button type="button" class="btn btn-primary btn-sm mx-lg-3" data-bs-toggle="modal"
+                    data-bs-target="#login-form">
                     Log In
                 </button>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#register-form">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#register-form">
                     Sign Up
                 </button>
             </div>
@@ -141,88 +143,90 @@
     <!-- navbar end -->
 
 
-<!--login and sign up form-->
-<section class="login and sign up form">
-    <div class="modal fade" id="login-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Hire a Developer </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <form action="hire_process.php" method="post">
-            <div class="form-group">
-              <label for="name">Your username:</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Your password:</label>
-              <input type="password" class="form-control" id="email" name="email" required>
-            </div>
-           
-           
-            
-            
-            <button type="submit" class="btn btn-primary btn-lg my-2">log in</button>
-          </form>
-            </div>
-           
-          </div>
-        </div>
-        </div>
-            
-<!--register form-->
-<div class="modal fade" id="register-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Register a new account </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        <form action="hire_process.php" method="post">
-        <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-      <label for="name">email</label>
-      <input type="email" class="form-control" id="email" name="name" required>
-    </div>
-        <div class="form-group">
-          <label for="name">phone number</label>
-          <input type="tel" class="form-control" id="phone" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="password">Your password:</label>
-          <input type="password" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-        <label for="password">Enter confirm password:</label>
-        <input type="password" class="form-control" id="cpassord" name="email" required>
-      </div>
-       
-       
-        
-        
-        <button type="submit" class="btn btn-primary btn-lg my-2">Register</button>
-      </form>
-        </div>
-       
-      </div>
-    </div>
-    </div>
-<!--register form-->
-</section>
+    <!--login and sign up form-->
+    <section class="login and sign up form">
+        <div class="modal fade" id="login-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Hire a Developer </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="hire_process.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Your username:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your password:</label>
+                                <input type="password" class="form-control" id="email" name="email" required>
+                            </div>
 
+
+
+
+                            <button type="submit" class="btn btn-primary btn-lg my-2">log in</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--register form-->
+        <div class="modal fade" id="register-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Register a new account </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="hire_process.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">email</label>
+                                <input type="email" class="form-control" id="email" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">phone number</label>
+                                <input type="tel" class="form-control" id="phone" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Your password:</label>
+                                <input type="password" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Enter confirm password:</label>
+                                <input type="password" class="form-control" id="cpassord" name="email" required>
+                            </div>
+
+
+
+
+                            <button type="submit" class="btn btn-primary btn-lg my-2">Register</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--register form-->
+    </section>
+    <!-- home -->
     <div class="container ">
         <div class="container-fluid d-lg-flex py-5 mx-lg-1 px-lg-4 px-md-3 px-sm-1 gap-5">
             <div class="card  px-0 py-lg-5   border-0  ">
                 <div class="card-body py-5 px-4    bg-tertiary ">
 
-                    <p class="card-text  bg-primary rounded-pill px-2   bg-opacity-25 " style="width: fit-content;"><strong>100%
-                            Satisfaction Gurantee</strong></p>
+                    <p class="card-text  bg-primary rounded-pill px-2   bg-opacity-25 " style="width: fit-content;">
+                        <strong>100%
+                            Satisfaction Gurantee</strong>
+                    </p>
                     <h1 class="card-title text-dark  "><strong> Start learning Skills </strong> </h1>
                     <h1 class="card-title  "><strong>From our top tutor</strong></h1>
                     <p class="card-text  ">Some quick example text to build on the card </p>
@@ -232,12 +236,12 @@
                 </div>
             </div>
             <div class="card border-0 px-5     ">
-                <img src="haha.png" class="card-img-top px-lg-5 mx-lg-2 img-fluid " alt="Image Alt Text">
+                <img src="img/haha.png" class="card-img-top px-lg-5 mx-lg-2 img-fluid " alt="Image Alt Text">
             </div>
         </div>
     </div>
 
-    <!-- Example Code -->
+
 
     <div class="d-lg-flex bg-primary text-light p-4 px-5 border-0  ">
         <div class="p-2 flex-fill bg-primary px-5 border border-top-0 border-start-0 border-bottom-0   ">
@@ -259,132 +263,143 @@
     </div>
 
     <!-- About us  -->
-    <div id="about">
-    <div class="container     " id="aboutus">
-        <div class="container-fluid d-lg-flex py-5 gap-5">
-            <div class="card mx-2 px-4    border-0  ">
-                <div class="card-body  bg-tertiary ">
-                    <p class="card-text  bg-primary rounded-pill px-2 bg-opacity-25 " style="width:fit-content">
-                        <strong>Why
-                            choose Us?</strong>
-                    </p>
-                    <h1 class="card-title text-dark  "><strong> Benefit you get when using our service </strong> </h1>
-
-                </div>
-            </div>
-            <div class="card mx-2 px-4    border-0  ">
-                <div class="card-body  ">
-                    <p class="card-text  ">Some quick example text to build on the card title and make up the bulk of
-                        the card's content. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, dicta
-                        minima earum debitis saepe quidem dolore aliquam repudiandae suscipit corporis!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <section>
-        <div class="container " data-aos="fade-left" data-aos-once="true">
-            <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1  ">
-
-                <div class="col-lg-4 mb-3 w-lg-30    col-12 col-md-5  ">
-                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
-
-                        <div class="card-body">
-
-
-                            <h5 class="card-title ">24*7 support </h5>
-                            <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-3 w-lg-30  col-12 col-md-5  ">
-                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
-
-                        <div class="card-body">
-
-
-                            <h5 class="card-title "> Affordable price</h5>
-                            <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3 w-lg-30   col-12 col-md-5  ">
-                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
-
-                        <div class="card-body">
-
-
-                            <h5 class="card-title ">Certified mentor</h5>
-
-                            <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3 w-lg-30  col-12 col-md-5  ">
-                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
-
-                        <div class="card-body">
-
-
-                            <h5 class="card-title ">interactive whiteboard </h5>
-
-                            <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quo.
+        <div id="about">
+            <div class="container     " id="aboutus">
+                <div class="container-fluid d-lg-flex py-5 gap-5">
+                    <div class="card mx-2 px-4    border-0  ">
+                        <div class="card-body  bg-tertiary ">
+                            <p class="card-text  bg-primary rounded-pill px-2 bg-opacity-25 " style="width:fit-content">
+                                <strong>Why
+                                    choose Us?</strong>
                             </p>
+                            <h1 class="card-title text-dark  "><strong> Benefit you get when using our service </strong>
+                            </h1>
 
-
+                        </div>
+                    </div>
+                    <div class="card mx-2 px-4    border-0  ">
+                        <div class="card-body  ">
+                            <p class="card-text  ">Some quick example text to build on the card title and make up the
+                                bulk
+                                of
+                                the card's content. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+                                dicta
+                                minima earum debitis saepe quidem dolore aliquam repudiandae suscipit corporis!</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-    </section
 
 
-    <!-- about section  -->
+            <div class="container " data-aos="fade-left" data-aos-once="true">
+                <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1  ">
+
+                    <div class="col-lg-4 mb-3 w-lg-30    col-12 col-md-5  ">
+                        <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                            <div class="card-body">
 
 
-    
-        <div class="container ">
-            <div class="container-fluid d-lg-flex py-1 gap-5">
+                                <h5 class="card-title ">24*7 support </h5>
+                                <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
 
-                <div class="card border-0   ">
-                    <img src="second.png" class="card-img-top" alt="Image Alt Text">
-                </div>
-                <div class="card  px-0  my-lg-5 py-5 border-0  ">
-                    <div class="card-body py-lg-5  my-lg-1 bg-tertiary ">
 
-                        <button class="card-text  bg-primary rounded-pill px-2  fs-4  bg-opacity-25 "
-                            style="width:auto"><strong>About us</strong></button>
-                        <h1 class="card-title text-dark  "><strong> Start learning Skills for superior</strong> </h1>
-                        <h1 class="card-title fs-1  "><strong>From our top tutor</strong></h1>
-                        <p class="card-text  ">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the card's content.</p>
 
-                        <button class="btn btn-outline-primary rounded-pill fs-3 " type="submit"><strong>learn
-                                more</strong></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 w-lg-30  col-12 col-md-5  ">
+                        <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                            <div class="card-body">
+
+
+                                <h5 class="card-title "> Affordable price</h5>
+                                <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
+
+
+
+
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="col-lg-4 mb-3 w-lg-30   col-12 col-md-5  ">
+                        <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                            <div class="card-body">
+
+
+                                <h5 class="card-title ">Certified mentor</h5>
+
+                                <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 w-lg-30  col-12 col-md-5  ">
+                        <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                            <div class="card-body">
+
+
+                                <h5 class="card-title ">interactive whiteboard </h5>
+
+                                <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus,
+                                    quo.
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <div class="container ">
+        <div class="container-fluid d-lg-flex py-1 gap-5">
+
+            <div class="card border-0   ">
+                <img src="img/second.png" class="card-img-top" alt="Image Alt Text">
+            </div>
+            <div class="card  px-0  my-lg-5 py-5 border-0  ">
+                <div class="card-body py-lg-5  my-lg-1 bg-tertiary ">
+
+                    <button class="card-text  bg-primary rounded-pill px-2  fs-4  bg-opacity-25 "
+                        style="width:auto"><strong>About us</strong></button>
+                    <h1 class="card-title text-dark  "><strong> Start learning Skills for superior</strong>
+                    </h1>
+                    <h1 class="card-title fs-1  "><strong>From our top tutor</strong></h1>
+                    <p class="card-text  ">Some quick example text to build on the card title and make up the
+                        bulk
+                        of
+                        the card's content.</p>
+
+                    <button class="btn btn-outline-primary rounded-pill fs-3 " type="submit"><strong>learn
+                            more</strong></button>
+                </div>
+
             </div>
         </div>
     </div>
+    </div>
 
+    </section>
 
     <!--course section -->
 
@@ -492,7 +507,7 @@
 
 
 
-<!--  COURSE  subscription SECTION   -->
+    <!--  COURSE  subscription SECTION   -->
     <section>
         <div class="modal-content mx-5 ">
 
@@ -503,12 +518,12 @@
             </div>
         </div>
 
-      
+
         <div class="container ">
             <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1 ">
                 <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <img src="img/web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
                         <div class="card-body">
                             <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
                                 style="width: fit-content;">Web application</h5>
@@ -532,7 +547,7 @@
                 </div>
                 <div class="col-lg-4 mb-3 py-3 mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="mobile app development.jpg" class="card img-thumbnail" style="height:300px ;"
+                        <img src="img/mobile app development.jpg " class="card img-thumbnail" style="height:300px ;"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
@@ -557,7 +572,7 @@
 
                 <div class="col-lg-4 mb-3 py-3 mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <img src="img/web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
                         <div class="card-body">
                             <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
                                 style="width: fit-content;">Web application</h5>
@@ -581,7 +596,7 @@
 
                 <div class="col-lg-4 mb-3 py-3 mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <img src="img/dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
                         <div class="card-body">
                             <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
                                 style="width: fit-content;">Digital maketing</h5>
@@ -605,8 +620,8 @@
 
                 <div class="col-lg-4 mb-3 py-3 mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="D:\practice\assignment2\mobile app development.jpg" class="card  img-thumbnail"
-                            style="height:300px ;" alt="...">
+                        <img src="img/mobile app development.jpg" class="card  img-thumbnail" style="height:300px ;"
+                            alt="...">
                         <div class="card-body">
                             <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
                                 style="width: fit-content;">App Development</h5>
@@ -671,7 +686,7 @@
             <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="card shadow  mb-5 bg-body-tertiary rounded">
-                        <img src="staff03.jpeg" class="card img-thumbnail" alt="...">
+                        <img src="img/staff03.jpeg" class="card img-thumbnail" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">MR.xyz</h5>
                             <p class="card-text">Sr.Mobile app developer</p>
@@ -688,7 +703,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="card shadow  mb-5 bg-body-tertiary rounded">
-                        <img src="staff02.jpeg" class="card img-thumbnail" alt="...">
+                        <img src="img/staff02.jpeg" class="card img-thumbnail" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Mr.Tiwari</h5>
                             <p class="card-text">Graphic Designer</p>
@@ -705,7 +720,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                     <div class="card shadow  mb-5 bg-body-tertiary rounded">
-                        <img src="staff01.jpeg" class="card img-thumbnail" alt="...">
+                        <img src="img/staff01.jpeg" class="card img-thumbnail" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Mrs.pokhrel</h5>
                             <p class="card-text">Sr.full stack developer</p>
@@ -730,7 +745,7 @@
 
 
 
-<!--contact section-->
+    <!--contact section-->
     <section id="contact">
         <div class="card bg-primary text-light mx-lg-5 rounded px-5 py-5">
 
@@ -751,9 +766,9 @@
                 </form>
             </div>
     </section>
-<!--contact section-->
+    <!--contact section-->
 
-      <!-- service section -->
+    <!-- service section -->
     <section id="service">
         <div class="modal-content mx-5 ">
 
@@ -764,147 +779,154 @@
             </div>
         </div>
 
-        
+
         <div class="container ">
             <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1  ">
                 <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <img src="img/web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
                         <div class="card-body">
 
                             <h5 class="card-title  ">Websites</h5>
                             <p class="card-text border-top mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing
                                 elit. Veritatis quae omnis aliquid minima nostrum odio.</p>
                             <div class=" border-top mb-3 py-3">
-                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#hire-developer-form">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                                    data-bs-target="#hire-developer-form">
                                     Hire us
-                                    </button>
+                                </button>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <img src="img/dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
                         <div class="card-body">
 
                             <h5 class="card-title  ">Social Media marketing</h5>
                             <p class="card-text border-top mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing
                                 elit. Veritatis quae omnis aliquid minima nostrum odio.</p>
                             <div class=" border-top mb-3 py-3">
-                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#hire-developer-form">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                                    data-bs-target="#hire-developer-form">
                                     Hire us
-                                    </button>
+                                </button>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="mobile app development.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <img src="img/mobile app development.jpg " class="card img-thumbnail" style="height:300px ;"
+                            alt="...">
                         <div class="card-body">
 
                             <h5 class="card-title  ">Mobile Application Development</h5>
                             <p class="card-text border-top mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing
                                 elit. Veritatis quae omnis aliquid minima nostrum odio.</p>
                             <div class=" border-top mb-3 py-3">
-                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#hire-developer-form">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                                    data-bs-target="#hire-developer-form">
                                     Hire us
-                                    </button>
+                                </button>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <img src="img/dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
                         <div class="card-body">
 
                             <h5 class="card-title  ">graphic designing</h5>
                             <p class="card-text border-top mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing
                                 elit. Veritatis quae omnis aliquid minima nostrum odio.</p>
                             <div class=" border-top mb-3 py-3">
-                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#hire-developer-form">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                                    data-bs-target="#hire-developer-form">
                                     Hire us
-                                    </button>
+                                </button>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
-                 
+
 
             </div>
 
         </div>
         <!-- hire a developer form -->
 
-           <div class="hire-developer-form">
+        <div class="hire-developer-form">
 
-            <div class="modal fade" id="hire-developer-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Hire a Developer </h1>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-    <form action="hire_process.php" method="post">
-    <div class="form-group">
-      <label for="name">Your Name:</label>
-      <input type="text" class="form-control" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Your Email:</label>
-      <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-    <label for="tel">mobile no</label>
-    <input type="tel" class="form-control" id="email" name="email" required>
-  </div>
-   
-    <div class="form-group">
-      <label for="projectType">Project Type:</label>
-      <select class="form-control" id="projectType" name="projectType" required>
-        <option value="web">Web Development</option>
-        <option value="mobile">Mobile App Development</option>
-        <option value="data">Data Science</option>
-        <option value="ai">Artificial Intelligence</option>
-        <!-- Add more project types as needed -->
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="projectDetails">Additional Project Details:</label>
-      <textarea class="form-control" id="projectDetails" name="projectDetails" rows="4"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary btn-lg my-2">sent</button>
-  </form>
-    </div>
-    <div class="footer text-center">
-       <p> we will contact you very sooon</P>  
-        
-     
-      
-    </div>
-  </div>
-</div>
-</div>
-           </div>
+            <div class="modal fade" id="hire-developer-form" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Hire a Developer </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <label for="name">Your Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tel">mobile no</label>
+                                    <input type="tel" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="projectType">Project Type:</label>
+                                    <select class="form-control" id="projectType" name="projectType" required>
+                                        <option value="web">Web Development</option>
+                                        <option value="mobile">Mobile App Development</option>
+                                        <option value="data">Data Science</option>
+                                        <option value="ai">Artificial Intelligence</option>
+                                        <!-- Add more project types as needed -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="projectDetails">Additional Project Details:</label>
+                                    <textarea class="form-control" id="projectDetails" name="projectDetails"
+                                        rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg my-2">sent</button>
+                            </form>
+                        </div>
+                        <div class="footer text-center">
+                            <p> we will contact you very sooon</P>
 
 
-       
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </section>
-<!--service blog end-->
+    <!--service blog end-->
 
-     <!-- blogs section -->
+    <!-- blogs section -->
 
     <section id="blogs">
         <div class="container   ">
-            <div class="container-fluid d-flex  justify-content-center py-5 ">
+            <div class="container-fluid d-flex  justify-content-left py-5 ">
                 <div class="card  px-0    border-0  py-lg-5  py-sm-3 ">
                     <div class="card-body  py-3  bg-tertiary ">
                         <p class="card-text  bg-primary rounded-pill px-lg-5 mx-4     bg-opacity-25 "
@@ -922,7 +944,8 @@
 
                 <div class="col-lg-4 mb-3   col-12 col-md-5  ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="highpayingskill.jpeg" class="card-img-top img-thumbnail" width="200" height="200" alt="...">
+                        <img src="img/highpayingskill.jpeg" class="card-img-top img-thumbnail" width="200" height="200"
+                            alt="...">
                         <div class="card-body">
                             <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
                                 style="width: fit-content;">Jobs</h5>
@@ -935,15 +958,17 @@
                                     <p>2023/12/15</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
                                 Read more
-                                </button>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-3   col-12 col-md-5  ">
                     <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <img src="bluechip.jpeg" class="card-img-top img-thumbnail" width="200" height="200" alt="...">
+                        <img src="img/bluechip.jpeg" class="card-img-top img-thumbnail" width="200" height="200"
+                            alt="...">
                         <div class="card-body">
                             <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
                                 style="width: fit-content;">Investment</h5>
@@ -956,20 +981,21 @@
                                     <p>2023/12/15</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
                                 Read more
-                                </button>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-3   col-12 col-md-5  " >
-                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" >
-                        <img src="pl.jpeg" class="card-img-top img-thumbnail" width="200" height="200" alt="...">
+                <div class="col-lg-4 mb-3   col-12 col-md-5  ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="img/pl.jpeg" class="card-img-top img-thumbnail" width="200" height="200" alt="...">
                         <div class="card-body">
                             <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
                                 style="width: fit-content;">tech</h5>
 
-                            <h5 class="card-title ">Top 10 programming language  </h5>
+                            <h5 class="card-title ">Top 10 programming language </h5>
                             <div class="d-flex flex-row border-top mb-3">
                                 <div class="p-2">Anish Tiwari</div>
 
@@ -977,15 +1003,16 @@
                                     <p>2023/12/15</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
                                 Read more
-                                </button>
+                            </button>
                         </div>
                     </div>
                 </div>
-                
-                
-               
+
+
+
 
             </div>
         </div>
@@ -993,31 +1020,47 @@
 
         <!--blog content-->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">blog on </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">blog on </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid voluptatem vel autem, odio
+                            ratione beatae tenetur nulla voluptatibus? Iste velit eaque non repellendus et dolore sit
+                            odit voluptate sed reprehenderit a, veniam saepe optio ullam, nam aspernatur delectus
+                            aperiam tempore sunt suscipit ipsa. Officia nam provident iusto vitae ratione quo suscipit
+                            quod unde corporis. Nostrum consectetur quisquam dicta laboriosam libero accusamus dolorum
+                            esse, fuga aspernatur ratione facilis nobis! Laudantium aspernatur doloribus expedita
+                            suscipit necessitatibus animi dolorem voluptates, harum totam, commodi, rerum porro a minima
+                            hic. Perspiciatis eaque facilis modi, a quos ipsa veritatis, ratione error quidem laudantium
+                            consequatur! Aperiam nihil recusandae dignissimos necessitatibus iusto porro atque placeat
+                            quae illo voluptate nostrum, corrupti dolorum odit, eveniet accusamus laborum sit
+                            doloremque? Ipsam ducimus error vero minima consequuntur nemo dolorum incidunt fugiat ad
+                            adipisci delectus eum illo non soluta ab officia nostrum voluptatem corrupti, autem eius
+                            exercitationem quibusdam. Illum doloremque suscipit, dolorum corrupti, amet odio voluptates
+                            inventore molestiae eligendi itaque nobis facilis magni quae rerum accusantium qui atque
+                            vero nostrum quia fugit iure? Adipisci, nesciunt voluptas voluptatibus ad sequi esse velit
+                            nihil id perspiciatis aut nam dolorem placeat quisquam deserunt distinctio ea atque,
+                            corrupti accusantium facere nisi ducimus, ipsa assumenda fugiat. Voluptatum, numquam?</P>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid voluptatem vel autem, odio ratione beatae tenetur nulla voluptatibus? Iste velit eaque non repellendus et dolore sit odit voluptate sed reprehenderit a, veniam saepe optio ullam, nam aspernatur delectus aperiam tempore sunt suscipit ipsa. Officia nam provident iusto vitae ratione quo suscipit quod unde corporis. Nostrum consectetur quisquam dicta laboriosam libero accusamus dolorum esse, fuga aspernatur ratione facilis nobis! Laudantium aspernatur doloribus expedita suscipit necessitatibus animi dolorem voluptates, harum totam, commodi, rerum porro a minima hic. Perspiciatis eaque facilis modi, a quos ipsa veritatis, ratione error quidem laudantium consequatur! Aperiam nihil recusandae dignissimos necessitatibus iusto porro atque placeat quae illo voluptate nostrum, corrupti dolorum odit, eveniet accusamus laborum sit doloremque? Ipsam ducimus error vero minima consequuntur nemo dolorum incidunt fugiat ad adipisci delectus eum illo non soluta ab officia nostrum voluptatem corrupti, autem eius exercitationem quibusdam. Illum doloremque suscipit, dolorum corrupti, amet odio voluptates inventore molestiae eligendi itaque nobis facilis magni quae rerum accusantium qui atque vero nostrum quia fugit iure? Adipisci, nesciunt voluptas voluptatibus ad sequi esse velit nihil id perspiciatis aut nam dolorem placeat quisquam deserunt distinctio ea atque, corrupti accusantium facere nisi ducimus, ipsa assumenda fugiat. Voluptatum, numquam?</P>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          
-        </div>
-      </div>
-    </div>
-    </div>
 
     </section>
 
     <!--blog end-->
 
 
-    
-<!--footer section-->
+
+    <!--footer section-->
     <footer class="bg-dark">
         <div class="container py-5 text-light">
             <div class="row">
@@ -1085,16 +1128,16 @@
         </div>
     </footer>
 
-<!--footer end-->
+    <!--footer end-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
 
-        <script src="path/to/jquery.min.js"></script>
-<script src="path/to/popper.min.js"></script>
-<script src="path/to/bootstrap.min.js"></script>
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/popper.min.js"></script>
+    <script src="path/to/bootstrap.min.js"></script>
 </body>
 
 </html>
