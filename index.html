@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="path/to/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>stellar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <style>
+        
+
+
+        .socialicons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .socialicons a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: background-color 0.5s;
+        }
+
+        .socialicons a i {
+            font-size: 2em;
+            color: #333;
+            opacity: 0.9;
+        }
+
+        .socialicons a:hover {
+            background-color: #000;
+        }
+
+        .socialicons a:hover i {
+            color: #fff;
+        }
+
+        .card img.img-thumbnail {
+            width: 100%;
+            /* Make the image responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        /* Add a class for mouse hover effect */
+        .card:hover {
+            transform: scale(1.05);
+            /* Increase size on hover */
+            transition: transform 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+        @media screen and (max-width: 1300px) {
+         
+         .socialicons {
+             flex-wrap: wrap;
+         }
+
+         @media screen and (max-width: 800px) {
+             .img-thumbnail {
+                 height: fit-content;
+
+             }
+
+         }
+
+         .socialicons a {
+             margin: 1px;
+         }
+     }
+    </style>
+
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand px-lg-5" href="#">Stellar tech</a>
+    
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4" aria-current="page" href="#home"><strong>Home</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4" href="#about"><strong>About us</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4" href="#course"><strong>Course</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4" href="#service"><strong>Service</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4" href="#testimonial"><strong>Testimonial</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4" href="#blogs"><strong>Blogs</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4" href="#contact"><strong>Contact Us</strong></a>
+                    </li>
+                </ul>
+    
+                <!-- Login and Sign Up Buttons -->
+                <button type="button" class="btn btn-primary btn-sm mx-lg-3" data-bs-toggle="modal" data-bs-target="#login-form">
+                    Log In
+                </button>
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#register-form">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+
+<!--login and sign up form-->
+<section class="login and sign up form">
+    <div class="modal fade" id="login-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Hire a Developer </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form action="hire_process.php" method="post">
+            <div class="form-group">
+              <label for="name">Your username:</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your password:</label>
+              <input type="password" class="form-control" id="email" name="email" required>
+            </div>
+           
+           
+            
+            
+            <button type="submit" class="btn btn-primary btn-lg my-2">log in</button>
+          </form>
+            </div>
+           
+          </div>
+        </div>
+        </div>
+            
+<!--register form-->
+<div class="modal fade" id="register-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Register a new account </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <form action="hire_process.php" method="post">
+        <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+      <label for="name">email</label>
+      <input type="email" class="form-control" id="email" name="name" required>
+    </div>
+        <div class="form-group">
+          <label for="name">phone number</label>
+          <input type="tel" class="form-control" id="phone" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Your password:</label>
+          <input type="password" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+        <label for="password">Enter confirm password:</label>
+        <input type="password" class="form-control" id="cpassord" name="email" required>
+      </div>
+       
+       
+        
+        
+        <button type="submit" class="btn btn-primary btn-lg my-2">Register</button>
+      </form>
+        </div>
+       
+      </div>
+    </div>
+    </div>
+<!--register form-->
+</section>
+
+    <div class="container ">
+        <div class="container-fluid d-lg-flex py-5 mx-lg-1 px-lg-4 px-md-3 px-sm-1 gap-5">
+            <div class="card  px-0 py-lg-5   border-0  ">
+                <div class="card-body py-5 px-4    bg-tertiary ">
+
+                    <p class="card-text  bg-primary rounded-pill px-2   bg-opacity-25 "><strong>100%
+                            Satisfaction Gurantee</strong></p>
+                    <h1 class="card-title text-dark  "><strong> Start learning Skills </strong> </h1>
+                    <h1 class="card-title  "><strong>From our top tutor</strong></h1>
+                    <p class="card-text  ">Some quick example text to build on the card </p>
+                    <button class="btn btn-outline-primary rounded-pill" type="submit"><strong>join
+                            free</strong></button>
+
+                </div>
+            </div>
+            <div class="card border-0 px-5     ">
+                <img src="haha.png" class="card-img-top px-lg-5 mx-lg-2 img-fluid " alt="Image Alt Text">
+            </div>
+        </div>
+    </div>
+
+    <!-- Example Code -->
+
+    <div class="d-lg-flex bg-primary text-light p-4 px-5 border-0  ">
+        <div class="p-2 flex-fill bg-primary px-5 border border-top-0 border-start-0 border-bottom-0   ">
+            <h1>150+</h1>
+            <h1>instructors</h1>
+        </div>
+        <div class=" flex-fill bg-primary p-2 px-5 border border-top-0 border-start-0 border-bottom-0 ">
+            <h1>8500+</h1>
+            <h1>Success story</h1>
+        </div>
+        <div class=" flex-fill bg-primary p-2 px-5 border border-top-0 border-start-0 border-bottom-0">
+            <h1>350+</h1>
+            <h1>Course & Subject</h1>
+        </div>
+        <div class=" flex-fill bg-primary p-2  px-5">
+            <h1>650K+</h1>
+            <h1>hour tutor</h1>
+        </div>
+    </div>
+
+    <!-- About us  -->
+    <div id="about">
+    <div class="container     " id="aboutus">
+        <div class="container-fluid d-lg-flex py-5 gap-5">
+            <div class="card mx-2 px-4    border-0  ">
+                <div class="card-body  bg-tertiary ">
+                    <p class="card-text  bg-primary rounded-pill px-2 bg-opacity-25 " style="width:fit-content">
+                        <strong>Why
+                            choose Us?</strong>
+                    </p>
+                    <h1 class="card-title text-dark  "><strong> Benefit you get when using our service </strong> </h1>
+
+                </div>
+            </div>
+            <div class="card mx-2 px-4    border-0  ">
+                <div class="card-body  ">
+                    <p class="card-text  ">Some quick example text to build on the card title and make up the bulk of
+                        the card's content. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, dicta
+                        minima earum debitis saepe quidem dolore aliquam repudiandae suscipit corporis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="container " data-aos="fade-left" data-aos-once="true">
+            <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1  ">
+
+                <div class="col-lg-4 mb-3 w-lg-30    col-12 col-md-5  ">
+                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title ">24*7 support </h5>
+                            <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 w-lg-30  col-12 col-md-5  ">
+                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title "> Affordable price</h5>
+                            <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 w-lg-30   col-12 col-md-5  ">
+                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title ">Certified mentor</h5>
+
+                            <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ad?</p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 w-lg-30  col-12 col-md-5  ">
+                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title ">interactive whiteboard </h5>
+
+                            <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quo.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section
+
+
+    <!-- about section  -->
+
+
+    
+        <div class="container ">
+            <div class="container-fluid d-lg-flex py-1 gap-5">
+
+                <div class="card border-0   ">
+                    <img src="second.png" class="card-img-top" alt="Image Alt Text">
+                </div>
+                <div class="card  px-0  my-lg-5 py-5 border-0  ">
+                    <div class="card-body py-lg-5  my-lg-1 bg-tertiary ">
+
+                        <button class="card-text  bg-primary rounded-pill px-2  fs-4  bg-opacity-25 "
+                            style="width:auto"><strong>About us</strong></button>
+                        <h1 class="card-title text-dark  "><strong> Start learning Skills for superior</strong> </h1>
+                        <h1 class="card-title fs-1  "><strong>From our top tutor</strong></h1>
+                        <p class="card-text  ">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+
+                        <button class="btn btn-outline-primary rounded-pill fs-3 " type="submit"><strong>learn
+                                more</strong></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--course section -->
+
+    <div id="course">
+        <div class="container ">
+            <div class="container-fluid d-flex  justify-content-center ">
+                <div class="card  px-0    border-0  " style="width: 30rem; padding-top: 180px;">
+                    <div class="card-body py-0     bg-tertiary ">
+
+                        <button class="card-text  bg-primary rounded-pill px-lg-5 mx-4   fs-4  bg-opacity-25 "
+                            style="width:auto "><strong>unique course category</strong></button>
+                        <h1 class="card-title text-dark  "><strong> Find Online tutor in any </strong> </h1>
+
+                        <h1 class="card-title text-primary px-5   "><strong> category </strong> </h1>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="container ">
+            <div class="row  mx-lg-1 px-lg-4 px-md-3 px-sm-1  ">
+
+                <div class="col-lg-4 mb-3 w-lg-30    col-12 col-md-5  ">
+                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title ">web application development </h5>
+
+                            <div class="p-2">2+ courses</div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 w-lg-30  col-12 col-md-5  ">
+                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title ">Web application development</h5>
+
+                            <div class="p-2">4+ courses</div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 w-lg-30   col-12 col-md-5  ">
+                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title ">mobile application development</h5>
+
+                            <div class="p-2">3+ clurses</div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 w-lg-30  col-12 col-md-5  ">
+                    <div class="card  shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                        <div class="card-body">
+
+
+                            <h5 class="card-title ">Digital marketing </h5>
+
+                            <div class="p-2">3+ courses</div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="modal-content  ">
+
+            <div class="modal-body px-5 py-5     ">
+                <h5 class="modal-title  text-center    "><a href="">see all category</a></h5>
+
+            </div>
+
+        </div>
+
+    </section>
+    </div>
+
+
+
+<!--  COURSE  subscription SECTION   -->
+    <section>
+        <div class="modal-content mx-5 ">
+
+            <div class="modal-body px-5 py-5  ">
+                <button class="modal-title  bg-primary rounded-pill px-2 text-primary  fs-6 border-0   bg-opacity-25 "
+                    style="width:auto">350+ largest course</button>
+                <h1 class="modal-title fs-1  ">our featured courses</h1>
+            </div>
+        </div>
+
+      
+        <div class="container ">
+            <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1 ">
+                <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
+                                style="width: fit-content;">Web application</h5>
+                            <div class="d-flex flex-row mb-3">
+                                <div class="p-2">05 lessons</div>
+                                <div class="p-2">12 hr 30 minute</div>
+                                <div class="p-2">1500</div>
+                            </div>
+                            <h5 class="card-title ">Full stack Development</h5>
+                            <div class="d-flex flex-row border-top mb-3">
+                                <div class="p-2">Anish tiwari</div>
+
+                                <div class="p-2 text-end text-primary">
+                                    <p>$1500</p>
+                                </div>
+
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Subscribe now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 py-3 mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="mobile app development.jpg" class="card img-thumbnail" style="height:300px ;"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
+                                style="width: fit-content;">Mobile application</h5>
+                            <div class="d-flex flex-row mb-3">
+                                <div class="p-2">05 lessons</div>
+                                <div class="p-2">12 hr 30 minute</div>
+                                <div class="p-2">1500</div>
+                            </div>
+                            <h5 class="card-title ">Mobile Application Development</h5>
+                            <div class="d-flex flex-row border-top mb-3">
+                                <div class="p-2">Anish tiwari</div>
+
+                                <div class="p-2 text-end text-primary">
+                                    <p>$1500</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Subscribe now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 py-3 mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
+                                style="width: fit-content;">Web application</h5>
+                            <div class="d-flex flex-row mb-3">
+                                <div class="p-2">05 lessons</div>
+                                <div class="p-2">12 hr 30 minute</div>
+                                <div class="p-2">1500</div>
+                            </div>
+                            <h5 class="card-title ">Full Stack development course</h5>
+                            <div class="d-flex flex-row border-top mb-3">
+                                <div class="p-2">Anish tiwari</div>
+
+                                <div class="p-2 text-end text-primary">
+                                    <p>$1500</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Subscribe now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 py-3 mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
+                                style="width: fit-content;">Digital maketing</h5>
+                            <div class="d-flex flex-row mb-3">
+                                <div class="p-2">05 lessons</div>
+                                <div class="p-2">12 hr 30 minute</div>
+                                <div class="p-2">1500</div>
+                            </div>
+                            <h5 class="card-title ">Digital marketing master class</h5>
+                            <div class="d-flex flex-row border-top mb-3">
+                                <div class="p-2">Anish tiwari</div>
+
+                                <div class="p-2 text-end text-primary">
+                                    <p>$1500</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Subscribe now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 py-3 mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="D:\practice\assignment2\mobile app development.jpg" class="card  img-thumbnail"
+                            style="height:300px ;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
+                                style="width: fit-content;">App Development</h5>
+                            <div class="d-flex flex-row mb-3">
+                                <div class="p-2">05 lessons</div>
+                                <div class="p-2">12 hr 30 minute</div>
+                                <div class="p-2">1500</div>
+                            </div>
+                            <h5 class="card-title ">Mobile application development</h5>
+                            <div class="d-flex flex-row border-top mb-3">
+                                <div class="p-2">Anish tiwari</div>
+
+                                <div class="p-2 text-end text-primary">
+                                    <p>$1500</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">Subscribe now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+    </section>
+    <!--course subscription section end  -->
+
+
+
+    <section id="testimonial">
+        <div class="container ">
+            <div class="container-fluid d-lg-flex py-5 gap-5 px-5">
+                <div class="card  px-0    border-0   ">
+                    <div class="card-body py-5   bg-tertiary ">
+
+                        <p class="card-text  bg-primary rounded-pill px-2   bg-opacity-25 " style="width:fit-content">
+                            <strong>Mentor from realworld Industry</strong>
+                        </p>
+                        <h1 class="card-title text-dark  "><strong> More than thousand of Expert in their own field
+                            </strong> </h1>
+
+
+
+
+                    </div>
+                </div>
+                <div class="card border-0 py-5 px-lg-3  ">
+                    <p class="card-text py-3  ">Some quick example text to build on the card title and make up the bulk
+                        of
+                        the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima quam
+                        quos reiciendis expedita optio illo deserunt libero suscipit nemo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="card shadow  mb-5 bg-body-tertiary rounded">
+                        <img src="staff03.jpeg" class="card img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MR.xyz</h5>
+                            <p class="card-text">Sr.Mobile app developer</p>
+                            <div class="socialicons">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="card shadow  mb-5 bg-body-tertiary rounded">
+                        <img src="staff02.jpeg" class="card img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mr.Tiwari</h5>
+                            <p class="card-text">Graphic Designer</p>
+                            <div class="socialicons">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="card shadow  mb-5 bg-body-tertiary rounded">
+                        <img src="staff01.jpeg" class="card img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mrs.pokhrel</h5>
+                            <p class="card-text">Sr.full stack developer</p>
+                            <div class="socialicons">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+<!--contact section-->
+    <section id="contact">
+        <div class="card bg-primary text-light mx-lg-5 rounded px-5 py-5">
+
+            <div class="card-body">
+                <h1 class="card-title text-center fs-1 "><strong>GET START WITH EDU TUTOR NOW </strong></h1>
+                <p class="card-text text-center ">Some quick example text to build on the card title and make up the
+                    bulk of the card's content.</p>
+                <form class="row g-0   py-2  bg-light rounded-pill ">
+
+                    <div class="col px-1 ">
+
+                        <input type="email" class="form-control border-0 bg-light " id="inputPassword2"
+                            placeholder="enter your email">
+                    </div>
+                    <div class="col-auto px-2">
+                        <button type="submit" class="btn btn-primary rounded-pill   ">Confirm identity</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+<!--contact section-->
+
+      <!-- service section -->
+    <section id="service">
+        <div class="modal-content mx-5 ">
+
+            <div class="modal-body px-5 py-5  ">
+                <button class="modal-title  bg-primary rounded-pill px-2 text-primary  fs-6 border-0   bg-opacity-25 "
+                    style="width:auto">Our Service List</button>
+                <h1 class="modal-title fs-1  ">What we are offering</h1>
+            </div>
+        </div>
+
+        
+        <div class="container ">
+            <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1  ">
+                <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="web.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title  ">Websites</h5>
+                            <p class="card-text border-top mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Veritatis quae omnis aliquid minima nostrum odio.</p>
+                            <div class=" border-top mb-3 py-3">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#hire-developer-form">
+                                    Hire us
+                                    </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title  ">Social Media marketing</h5>
+                            <p class="card-text border-top mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Veritatis quae omnis aliquid minima nostrum odio.</p>
+                            <div class=" border-top mb-3 py-3">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#hire-developer-form">
+                                    Hire us
+                                    </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="mobile app development.jpg" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title  ">Mobile Application Development</h5>
+                            <p class="card-text border-top mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Veritatis quae omnis aliquid minima nostrum odio.</p>
+                            <div class=" border-top mb-3 py-3">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#hire-developer-form">
+                                    Hire us
+                                    </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 py-3   mb-sm-0 ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="dm.png" class="card img-thumbnail" style="height:300px ;" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title  ">graphic designing</h5>
+                            <p class="card-text border-top mb-3 ">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Veritatis quae omnis aliquid minima nostrum odio.</p>
+                            <div class=" border-top mb-3 py-3">
+                                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#hire-developer-form">
+                                    Hire us
+                                    </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                 
+
+            </div>
+
+        </div>
+        <!-- hire a developer form -->
+
+           <div class="hire-developer-form">
+
+            <div class="modal fade" id="hire-developer-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Hire a Developer </h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <form action="hire_process.php" method="post">
+    <div class="form-group">
+      <label for="name">Your Name:</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+    <label for="tel">mobile no</label>
+    <input type="tel" class="form-control" id="email" name="email" required>
+  </div>
+   
+    <div class="form-group">
+      <label for="projectType">Project Type:</label>
+      <select class="form-control" id="projectType" name="projectType" required>
+        <option value="web">Web Development</option>
+        <option value="mobile">Mobile App Development</option>
+        <option value="data">Data Science</option>
+        <option value="ai">Artificial Intelligence</option>
+        <!-- Add more project types as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="projectDetails">Additional Project Details:</label>
+      <textarea class="form-control" id="projectDetails" name="projectDetails" rows="4"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg my-2">sent</button>
+  </form>
+    </div>
+    <div class="footer text-center">
+       <p> we will contact you very sooon</P>  
+        
+     
+      
+    </div>
+  </div>
+</div>
+</div>
+           </div>
+
+
+       
+
+    </section>
+<!--service blog end-->
+
+     <!-- blogs section -->
+
+    <section id="blogs">
+        <div class="container   ">
+            <div class="container-fluid d-flex  justify-content-center py-5 ">
+                <div class="card  px-0    border-0  py-lg-5  py-sm-3 ">
+                    <div class="card-body  py-3  bg-tertiary ">
+                        <p class="card-text  bg-primary rounded-pill px-lg-5 mx-4     bg-opacity-25 "
+                            style="width:fit-content ">Blogs & news</p>
+                        <h1 class="card-title text-dark  "><strong> Our Latest Blogs & News </strong> </h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container ">
+            <div class="row mx-lg-1 px-lg-4 px-md-3 px-sm-1 ">
+
+                <div class="col-lg-4 mb-3   col-12 col-md-5  ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="highpayingskill.jpeg" class="card-img-top img-thumbnail" width="200" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
+                                style="width: fit-content;">Jobs</h5>
+
+                            <h5 class="card-title ">top 10 high earning job of 2024</h5>
+                            <div class="d-flex flex-row border-top mb-3">
+                                <div class="p-2">Anish tiwari</div>
+
+                                <div class="p-2 text-end text-primary">
+                                    <p>2023/12/15</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more
+                                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3   col-12 col-md-5  ">
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <img src="bluechip.jpeg" class="card-img-top img-thumbnail" width="200" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
+                                style="width: fit-content;">Investment</h5>
+
+                            <h5 class="card-title ">Blue chip company to invest</h5>
+                            <div class="d-flex flex-row border-top mb-3">
+                                <div class="p-2">Anish Tiwari</div>
+
+                                <div class="p-2 text-end text-primary">
+                                    <p>2023/12/15</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more
+                                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3   col-12 col-md-5  " >
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" >
+                        <img src="pl.jpeg" class="card-img-top img-thumbnail" width="200" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title bg-primary bg-opacity-25 px-1 rounded fs-6 text-primary"
+                                style="width: fit-content;">tech</h5>
+
+                            <h5 class="card-title ">Top 10 programming language  </h5>
+                            <div class="d-flex flex-row border-top mb-3">
+                                <div class="p-2">Anish Tiwari</div>
+
+                                <div class="p-2 text-end text-primary">
+                                    <p>2023/12/15</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more
+                                </button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+               
+
+            </div>
+        </div>
+
+
+        <!--blog content-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">blog on </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid voluptatem vel autem, odio ratione beatae tenetur nulla voluptatibus? Iste velit eaque non repellendus et dolore sit odit voluptate sed reprehenderit a, veniam saepe optio ullam, nam aspernatur delectus aperiam tempore sunt suscipit ipsa. Officia nam provident iusto vitae ratione quo suscipit quod unde corporis. Nostrum consectetur quisquam dicta laboriosam libero accusamus dolorum esse, fuga aspernatur ratione facilis nobis! Laudantium aspernatur doloribus expedita suscipit necessitatibus animi dolorem voluptates, harum totam, commodi, rerum porro a minima hic. Perspiciatis eaque facilis modi, a quos ipsa veritatis, ratione error quidem laudantium consequatur! Aperiam nihil recusandae dignissimos necessitatibus iusto porro atque placeat quae illo voluptate nostrum, corrupti dolorum odit, eveniet accusamus laborum sit doloremque? Ipsam ducimus error vero minima consequuntur nemo dolorum incidunt fugiat ad adipisci delectus eum illo non soluta ab officia nostrum voluptatem corrupti, autem eius exercitationem quibusdam. Illum doloremque suscipit, dolorum corrupti, amet odio voluptates inventore molestiae eligendi itaque nobis facilis magni quae rerum accusantium qui atque vero nostrum quia fugit iure? Adipisci, nesciunt voluptas voluptatibus ad sequi esse velit nihil id perspiciatis aut nam dolorem placeat quisquam deserunt distinctio ea atque, corrupti accusantium facere nisi ducimus, ipsa assumenda fugiat. Voluptatum, numquam?</P>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+
+    </section>
+
+    <!--blog end-->
+
+
+    
+<!--footer section-->
+    <footer class="bg-dark">
+        <div class="container py-5 text-light">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum rerum repudiandae alias
+                        magni atque debitis vel consectetur quam labore, enim, quisquam, sed sunt iure fugit veritatis
+                        nisi suscipit natus!</p>
+                    <div class="socialicons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-5 ">
+                    <h3>company</h3>
+                    <div class="link">
+                        <a href="" class="text-decoration-none d-block py-1 text-white">Home</a>
+                        <a href="" class="text-decoration-none d-block py-1 text-white">aboutus</a>
+                        <a href="" class="text-decoration-none d-block py-1 text-white">courses</a>
+                        <a href="" class="text-decoration-none d-block py-1 text-white">testimonal</a>
+                        <a href="" class="text-decoration-none d-block py-1 text-white">contact us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-5 ">
+                    <h3>contact us</h3>
+                    <div class="contact info">
+                        <p>9867077378</p>
+
+                        <p>9827162268</p>
+                    </div>
+                    <p>map</p>
+                    <div class="map"></div>
+                    <div class="card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.0204201462807!2d83.97225132552727!3d28.20669217589999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995956db5f22503%3A0x55189e70e1db6ca3!2sXDezo%20Technologies!5e0!3m2!1sen!2snp!4v1703741433843!5m2!1sen!2snp"
+                            width="fit-content" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <h3>Get Latest Information</h3>
+                    <form class="row g-0   py-2  bg-light rounded-pill ">
+
+                        <div class="col px-1 ">
+
+                            <input type="email" class="form-control border-0 bg-light " id="inputPassword2"
+                                placeholder="enter your email">
+                        </div>
+                        <div class="col-auto px-2">
+                            <button type="submit" class="btn btn-primary rounded-pill   ">send email</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footerbottom text-light text-center py-4 border-top-2 ">
+            <p>Copyright &copy; 2023; Designed by <span class="designer">anish tiwari</span></p>
+        </div>
+    </footer>
+
+<!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+        <script src="path/to/jquery.min.js"></script>
+<script src="path/to/popper.min.js"></script>
+<script src="path/to/bootstrap.min.js"></script>
+</body>
+
+</html>
